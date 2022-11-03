@@ -1,0 +1,23 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "nuestro primer proyecto nodejs",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://marcoperez99@bitbucket.org/marcoperez99/guia-hoteles.git"
+  },
+  "author": "Javier Gorgoroso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/marcoperez99/guia-hoteles/issues"
+  },
+  "homepage": "https://bitbucket.org/marcoperez99/guia-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
