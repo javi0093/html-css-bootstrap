@@ -6,12 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
 
     <!--Bootstrap Css-->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
-    <title>Página javier</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css"  rel="stylesheet"/>
+    <link href="CSS/main.css"  rel="stylesheet"/>
+    <title>Guía de hoteles</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="jumbotron">
+        <h1>Hoteles</h1>
+    </div>
+    <div class="container">
+        <!--el flex-warp hace que las columnas no se salgan de pantalla y las acomoda abajo para evitar tener scrol lateral para navegar en la página-->
+        <div class="d-flex flex-wrap">
+           <!--las columnas son 12, si quiero 3 columnas en este caso le digo que el ancho de las columnas es 4 (12/3=4)-->
+            <div class="col-sm-4">
+                <p>
+                    <h3>¿cómo funciona?</h3>
+                    <p>busca los hoteles de acuerdo a tu preferencia</p>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <p>
+                    <h3>¿cómo puedo reservar?</h3>
+                    <p>Elegí la ciudad que te interese y luego realizá la reserva con tus datos</p>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <p>
+                    <h3>¿Cómo pago?</h3>
+                    <p>Utilizá tu targeta preferida</p>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex flex-wrap "> <!--el flex-row-reverse rellena de derecha a izquierda-->
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h4> hotel Radial</h4>
+                    <p>hotel hubicado en el centro cerca de todos los servicios necesarios</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar</button>
+                </div> 
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h4> hotel Perazza</h4>
+                    <p>hotel hubicado en el centro</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar</button>
+                </div>
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h4> hotel Libertad</h4>
+                    <p>hotel hubicado en el centro</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar</button>
+                </div>
+                
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h4> hotel Villa María</h4>
+                    <p>hotel hubicado en el centro</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar</button>
+                </div>
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h4> hotel Puntas de Valdés</h4>
+                    <p>hotel hubicado en el centro</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar</button>
+                </div>
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h4> hotel San José</h4>
+                    <p>hotel hubicado en el centro</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar</button>
+                </div>
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h4> hotel Montevideo</h4>
+                    <p>hotel hubicado en el centro</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar</button>
+                </div>
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h4> hotel Colonia</h4>
+                    <p>hotel hubicado en el centro</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="row">
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="https://facebook.com">Facebook</a>
+                <a href="https://Instagram.com">Instagram</a>
+                <a href="https://twitter.com">Twitter</a>
+            </div>
+            <div class="col-sm-4">
+                <address>
+                        <h5>Contacto</h5>
+                        <p>R1 km 68 Radial (San José,Uruguay)</p>
+                        <p>Tel: +598 98765432</p>
+                        <p>Contacto:mailfalso@guiahoteles.com</p>
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <a href="https://facebook.com">Nosotros</a>
+                <a href="https://Instagram.com">Términos y condiciones</a>
+                <a href="https://twitter.com">Contacto</a>
+            </div>
+        </div>
+       
+    </footer>
     <!--optional JavaScript-->
     <!--JQuery fisrst, then popper, then Bootstrap-->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>

@@ -1,0 +1,34 @@
+.jumbotron{
+    background-color: orange;
+    color: black;
+}
+
+/*si quiero cambiarle manualmente el color a los botones
+.btn{
+    color: white;
+    background-color: brown;
+
+    si al lado de class btn pongo btn-primary se cambia a fondo azul y letras blancas por ser algo de
+    Bootstrap
+    otras opciones de Bootstrap son btn-warning (amarillo negro), btn-success(verde blanco) 
+    si quiero más hay en https://getbootstrap.com/docs/4.0/components/buttons/
+}*/
+
+footer{
+    padding: 10px 10px 0 10px;
+    background-color: yellow;
+
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.card-hotel{
+    flex: 1 150px; /*el 1 hace referencia a la propiedad de flex wrap (cuanto queremos que crezca el elemento, si le pongo 2 el elemento puede ocupar el
+    doble de ancho, el 150 es la propiedad flex basics pages que indica cual es el ancho definido)*/
+    padding: 2px 5px 2px 5px ;
+    margin-top: 10px
+
+}
+.btn-reserva{
+    width: 100%;
+}
