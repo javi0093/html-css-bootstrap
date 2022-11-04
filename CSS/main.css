@@ -1,6 +1,7 @@
 .jumbotron{
     background-color: rgb(75, 143, 221);
-    color: black;
+    color: white;
+    
 }
 
 /*si quiero cambiarle manualmente el color a los botones
@@ -16,7 +17,7 @@
 
 footer{
     padding: 10px 10px 0 10px;
-    background-color: rgb(0, 255, 213);
+    background-color: rgb(115, 185, 202);
 
     margin-bottom: 0px;
     margin-top: 10px;

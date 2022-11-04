@@ -6,15 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
 
     <!--Bootstrap Css-->
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css"  rel="stylesheet"/>
-    <link href="CSS/main.css"  rel="stylesheet"/>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css"  rel="stylesheet" />
+    <link href="CSS/main.css"  rel="stylesheet" />
     <title>Alquicar</title>
   </head>
   <body>
-    <div class="jumbotron">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"><!--fixed-top es para que el navbar quede aunque baje en la página-->
+        <!--el navbar-expand hace que se expanda la navbar y si achico se pasa a menú desplegable, el md es el tamaño, puede ser lg(large) o sm(small)-->
+        <a class="navbar-brand" href="#">Automóviles</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span><!--éste es el ícono del botón-->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="/term y cond.html">Términos y condiciones</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron mt-4 p-5">
         <h1>Alquiler de Automóviles</h1>
     </div>
     <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+          </nav>
         <!--el flex-warp hace que las columnas no se salgan de pantalla y las acomoda abajo para evitar tener scrol lateral para navegar en la página-->
         <div class="d-flex flex-wrap">
            <!--las columnas son 12, si quiero 3 columnas en este caso le digo que el ancho de las columnas es 4 (12/3=4)-->
@@ -206,9 +226,9 @@
                 </address>
             </div>
             <div class="col-sm-4 d-flex flex-column align-items-end">
-                <a href="https://facebook.com">Nosotros</a>
-                <a href="https://Instagram.com">Términos y condiciones</a>
-                <a href="https://twitter.com">Contacto</a>
+                <a href="/about.html">Nosotros</a>
+                <a href="/term y cond.html">Términos y condiciones</a>
+                <a href="/contacto.html">Contacto</a>
             </div>
         </div>
        
