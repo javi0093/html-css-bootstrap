@@ -8,29 +8,29 @@
     <!--Bootstrap Css-->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css"  rel="stylesheet"/>
     <link href="CSS/main.css"  rel="stylesheet"/>
-    <title>Guía de hoteles</title>
+    <title>Alquicar</title>
   </head>
   <body>
     <div class="jumbotron">
-        <h1>Hoteles</h1>
+        <h1>Alquiler de Automóviles</h1>
     </div>
     <div class="container">
         <!--el flex-warp hace que las columnas no se salgan de pantalla y las acomoda abajo para evitar tener scrol lateral para navegar en la página-->
         <div class="d-flex flex-wrap">
            <!--las columnas son 12, si quiero 3 columnas en este caso le digo que el ancho de las columnas es 4 (12/3=4)-->
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-encabezado">
                 <p>
                     <h3>¿cómo funciona?</h3>
-                    <p>busca los hoteles de acuerdo a tu preferencia</p>
+                    <p>busca entre nuestro catálogo el vehículo que deseas alquilar</p>
                 </p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-encabezado">
                 <p>
-                    <h3>¿cómo puedo reservar?</h3>
-                    <p>Elegí la ciudad que te interese y luego realizá la reserva con tus datos</p>
+                    <h3>¿cómo puedo alquilar un vehículo?</h3>
+                    <p>Elegí el auto que deseas alquilar, tu método de pago y completá tus datos, luego con la reserva pasá por nuestro local a retirar el vehículo</p>
                 </p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 col-encabezado align-items-end">
                 <p>
                     <h3>¿Cómo pago?</h3>
                     <p>Utilizá tu targeta preferida</p>
@@ -39,78 +39,151 @@
         </div>
         <hr>
         <div class="d-flex flex-wrap "> <!--el flex-row-reverse rellena de derecha a izquierda-->
-            <div class="card-hotel d-flex flex-column justify-content-between">
+            <div class="car-alq d-flex flex-column justify-content-between">
                 <div>
-                    <h4> hotel Radial</h4>
-                    <p>hotel hubicado en el centro cerca de todos los servicios necesarios</p>
+                    <h4 class="auto"> Citroen c4</h4>
+                    <img src="https://carwow-es-wp-2.imgix.net/Citroen-C4-2021-colores.jpg?auto=format&cs=tinysrgb&fit=clip&ixlib=rb-1.1.0&q=60&w=1536"
+                    width="150" height="85">
+                    <p>Año 2021</p>
+                    <p>motor 1.2 gasolina</p>
+                    <p>Aire acondicionado</p>
+                    <p>transmición manual</p> 
+                    <p>vidrios eléctricos</p>
+                    <p>dirección hidráulica</p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar</button>
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar C4</button>
+                    <!--de momento coloco la alerta al hacer click en el botón-->
                 </div> 
             </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
+            <div class="car-alq d-flex flex-column justify-content-between">
                 <div>
-                    <h4> hotel Perazza</h4>
-                    <p>hotel hubicado en el centro</p>
+                    <h4 class="auto"> Volkswagen Gol</h4>
+                    <img src="https://s1.1zoom.me/big0/262/Volkswagen_Red_Metallic_White_background_592799_1280x853.jpg"
+                    width="150" height="100">
+                    <p>Año 2022</p>
+                    <p>motor 1.6 diessel</p>
+                    <p>Aire acondicionado</p>
+                    <p>transmición manual</p> 
+                    <p>vidrios eléctricos delanteros</p>
+                    <p>dirección hidráulica</p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar</button>
-                </div>
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar Gol</button>
+                </div> 
             </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
+            <div class="car-alq d-flex flex-column justify-content-between">
                 <div>
-                    <h4> hotel Libertad</h4>
-                    <p>hotel hubicado en el centro</p>
+                    <h4 class="auto"> Renault Kwid</h4>
+                    <img src="https://s1.1zoom.me/big0/677/Renault_Kwid_Ultra_ZA-spec_2020_Crossover_White_596801_1280x822.jpg"
+                    width="150" height="100">
+                    <p>Año 2022</p>
+                    <p>motor 1.0 gasolina</p>
+                    <p>Aire acondicionado</p>
+                    <p>transmición automática</p> 
+                    <p>vidrios eléctricos</p>
+                    <p>dirección asistida</p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar</button>
-                </div>
-                
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar Kwid</button>
+                </div> 
             </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
+            <div class="car-alq d-flex flex-column justify-content-between">
                 <div>
-                    <h4> hotel Villa María</h4>
-                    <p>hotel hubicado en el centro</p>
+                    <h4 class="auto"> Hyundai Creta</h4>
+                    <img src="https://s1.1zoom.me/big0/805/Hyundai_Creta_MX-spec_(SU2)_2020_Crossover_White_596772_1280x822.jpg"
+                    width="150" height="100">
+                    <p>Año 2020</p>
+                    <p>motor 1.6 gasolina</p>
+                    <p>Aire acondicionado</p>
+                    <p>transmición manual</p> 
+                    <p>vidrios eléctricos delanteros</p>
+                    <p>dirección hidráulica</p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar</button>
-                </div>
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar creta</button>
+                </div> 
             </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
+            <div class="car-alq d-flex flex-column justify-content-between">
                 <div>
-                    <h4> hotel Puntas de Valdés</h4>
-                    <p>hotel hubicado en el centro</p>
+                    <h4 class="auto"> Volkswagen Nivus tredline</h4>
+                    <img src="https://awscdn.volkswagen.cl/media/Content_Model_Equipment_Lightbox_Child_MediaBig_Image_Component/64742-803718_lightbox-706743-mediaBig-child/dh-779-00fe24/8f868e63/1657115537/nivus-colores-vw-0015-nivus-cl-rojo-metalico.png"
+                    width="150" height="100">
+                    <p>Año 2022</p>
+                    <p>motor 1.0 gasolina</p>
+                    <p>Aire acondicionado</p>
+                    <p>transmición manual</p> 
+                    <p>vidrios eléctricos</p>
+                    <p>dirección hidráulica</p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar</button>
-                </div>
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar Nivus</button>
+                </div> 
             </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
+            <div class="car-alq d-flex flex-column justify-content-between">
                 <div>
-                    <h4> hotel San José</h4>
-                    <p>hotel hubicado en el centro</p>
+                    <h4 class="auto"> BMW 118I </h4>
+                    <img src="https://hips.hearstapps.com/es.h-cdn.co/cades/contenidos/10960/2017-bmw-1-series-sedan-china-11.jpg?resize=980:*"
+                    width="160" height="85">
+                    <p>Año 2022</p>
+                    <p>motor 1.6 gasolina</p>
+                    <p>Aire acondicionado</p>
+                    <p>transmición manual</p> 
+                    <p>vidrios eléctricos</p>
+                    <p>dirección hidráulica</p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar</button>
-                </div>
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar 118I</button>
+                </div> 
             </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
+            <div class="car-alq d-flex flex-column justify-content-between">
                 <div>
-                    <h4> hotel Montevideo</h4>
-                    <p>hotel hubicado en el centro</p>
+                    <h4 class="auto"> Renault Oroch</h4>
+                    <img src="https://cdn.group.renault.com/ren/ar/modelos/duster-oroch/ph1/renault-duster-oroch-u79-ph1-4x4-duster-oroch-001.jpg.ximg.large.webp/c338d474ce.webp"
+                    width="150" height="85">
+                    <p>Año 2019</p>
+                    <p>motor 1.6 gasolina</p>
+                    <p>Aire acondicionado</p>
+                    <p>transmición manual</p> 
+                    <p>vidrios eléctricos</p>
+                    <p>dirección hidráulica</p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar</button>
-                </div>
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar Oroch</button>
+                </div> 
             </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
+            <div class="car-alq d-flex flex-column justify-content-between">
                 <div>
-                    <h4> hotel Colonia</h4>
-                    <p>hotel hubicado en el centro</p>
+                    <h4 class="auto"> Mercedes Benz SLK 350</h4>
+                    <img src="https://cache4.pakwheels.com/system/car_generation_pictures/3005/original/Mercedes-Benz-SLK-Class-3rd-Gen-(2011-Present).jpg?1444118367"
+                    width="150" height="110">
+                    <p>Año 2022</p>
+                    <p>motor 3.0 gasolina</p>
+                    <p>Aire acondicionado</p>
+                    <p>transmición manual</p> 
+                    <p>vidrios eléctricos delanteros</p>
+                    <p>dirección hidráulica</p>
+                    <p>Techo corredizo</p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar</button>
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar Gol</button>
+                </div> 
+            </div>
+            <div class="car-alq d-flex flex-column justify-content-between">
+                <div>
+                    <h4 class="auto"> Hyundai H1</h4>
+                    <img src="https://www.16valvulas.com.ar/wp-content/uploads/2008/08/hyundai-h1-1.jpg"
+                    width="150" height="85">
+                    <p>Año 2019</p>
+                    <p>motor 2.4 diessel</p>
+                    <p>Aire acondicionado</p>
+                    <p>transmición manual</p> 
+                    <p>vidrios eléctricos delanteros</p>
+                    <p>dirección hidráulica</p>
                 </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/>Reservar H1</button>
+                </div> 
             </div>
             
         </div>
@@ -127,9 +200,9 @@
             <div class="col-sm-4">
                 <address>
                         <h5>Contacto</h5>
-                        <p>R1 km 68 Radial (San José,Uruguay)</p>
+                        <p>Bv artigas 11600 (Montevideo,Uruguay)</p>
                         <p>Tel: +598 98765432</p>
-                        <p>Contacto:mailfalso@guiahoteles.com</p>
+                        <p>Contacto: alquicar@alquilerautos.com</p>
                 </address>
             </div>
             <div class="col-sm-4 d-flex flex-column align-items-end">
