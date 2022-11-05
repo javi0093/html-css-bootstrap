@@ -39,3 +39,11 @@ footer{
 .auto{
     color: rgb(141, 43, 4);
 }
+.navbar-brand{
+    padding: 1px 10px 1px 10px;
+    margin-left: 15px;
+}
+.navbar-toggler{
+    padding: 1px 10px 1px 10px; 
+    margin-right: 20px;
+}

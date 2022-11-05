@@ -24,7 +24,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/index.html"><ion-icon name="home"></ion-icon>Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="/about.html">Nosotros</a></li>
                 <li class="nav-item active"><a class="nav-link" href="/contacto.html">Contacto</a></li>
                 <li class="nav-item"><a class="nav-link" href="/term y cond.html">Términos y condiciones</a></li>
@@ -42,28 +42,72 @@
                 <li class="breadcrumb-item active" aria-current="page">contacto</li>
             </ol>
         </nav>
-        <span>
-            <h2>Contacto</h2>
-                    <p>dirección: Bv artigas 11600 (Montevideo,Uruguay)</p>
-                    <p>Teléfono: +598 98765432</p>
-                    <p>mail: alquicar@alquilerautos.com</p>
-        </span>
+            <h2 style="color: rgb(100, 11, 41) ;">Contacto</h2>
+            <h4>Déjanos tu comentario</h4>
+            <form>
+                <div class="form-group row">
+                    <div class="form-group col-sm-6">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="ingrese su nombre"> 
+                    </div>
+                    <div class="form-group col-sm-6">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" placeholder="ingrese su Apellido"> 
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="ingrese su Email"> 
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="form-group col-sm-9">
+                        <label for="direccion">Dirección</label>
+                            <input type="text" class="form-control" id="direccion" placeholder="ingrese su Dirección"> 
+                    </div>
+                    <div class="form-group col-sm-3">
+                            <label for="consulta">Tipo de consulta</label>
+                            <select id="consulta" class="form-control">
+                            <option selected>Alquiler</option>
+                            <option>Forma de pago</option>
+                            <option>Garantía</option>
+                            <option>Valoración del servicio</option>
+                            <option>Otros...</option>
+                            </select>
+                    </div>
+                </div>
+                
+                <div class="form-group"> 
+                    <label for="comentario">Comentario</label>
+                        <textarea id="comentario" class="form-control" rows="10"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="contactame">
+                    <label class="form-check-label" for="contactame">Quiero que me contacten</label>
+                    </div>
+                    
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                
+            </form>
     </div>
 
 
-    <Footer>
+    <footer>
         <div class="row">
             <div class="col-sm-4 d-flex flex-column">
-                <a href="https://facebook.com">Facebook</a>
-                <a href="https://Instagram.com">Instagram</a>
-                <a href="https://twitter.com">Twitter</a>
+                <a href="https://facebook.com"><ion-icon name="logo-facebook"></ion-icon> Facebook</a>
+                <a href="https://Instagram.com"><ion-icon name="logo-instagram"></ion-icon> Instagram</a>
+                <a href="https://twitter.com"><ion-icon name="logo-twitter"></ion-icon> Twitter</a>
             </div>
             <div class="col-sm-4">
                 <address>
-                    <h5>Contacto</h5>
-                    <p>Bv artigas 11600 (Montevideo,Uruguay)</p>
-                    <p>Tel: +598 98765432</p>
-                    <p>Contacto: alquicar@alquilerautos.com</p>
+                        <h5>Contacto</h5>
+                        <p><ion-icon name="location-sharp"></ion-icon> Bv artigas 11600 (Montevideo,Uruguay)</p>
+                        <p><ion-icon name="logo-whatsapp"></ion-icon> Whatsapp: +598 29876543</p>
+                        <p><ion-icon name="call-sharp"></ion-icon> tel: +598 98765432</p>
+                        <p><ion-icon name="mail-open-sharp"></ion-icon> Mail: alquicar@alquilerautos.com</p>
+                        <!--para los de open iconic se hace <span class="oi oi-NOMBRE DEL ICONO"></span>-->
                 </address>
             </div>
             <div class="col-sm-4 d-flex flex-column align-items-end">
@@ -72,13 +116,14 @@
                 <a href="/contacto.html">Contacto</a>
             </div>
         </div>
-
+       
     </footer>
     <!--optional JavaScript-->
     <!--JQuery fisrst, then popper, then Bootstrap-->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
-
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  </body>
+</html>
 </html>
