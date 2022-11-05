@@ -1,7 +1,10 @@
 .jumbotron{
     background-color: rgb(75, 143, 221);
-    color: white;
-    
+    color: white;   
+}
+.imagenlogo{
+    width: 80px;
+    height: 30px;
 }
 
 /*si quiero cambiarle manualmente el color a los botones
