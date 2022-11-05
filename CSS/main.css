@@ -26,19 +26,21 @@ footer{
 .car-alq{
     flex: 1 200px; /*el 1 hace referencia a la propiedad de flex wrap (cuanto queremos que crezca el elemento, si le pongo 2 el elemento puede ocupar el
     doble de ancho, el 150 es la propiedad flex basics pages que indica cual es el ancho definido)*/
-    padding: 2px 5px 2px 5px ;
-    margin-top: 10px
+    padding: 2px 0px 0px 0px ; /*padding da en orden: padding arriba, derecha abajo izquierda*/
+    margin-top: 10px;
+    margin-right: 2px;
+    margin-left: 2px;
 
 }
+
+
 .btn-reserva{
     width: 100%;
 }
 .col-encabezado{
     padding: 2px 10px 2px 10px;
 }
-.auto{
-    color: rgb(141, 43, 4);
-}
+
 .navbar-brand{
     padding: 1px 10px 1px 10px;
     margin-left: 15px;
