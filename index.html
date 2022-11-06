@@ -45,7 +45,7 @@
             <div class="col-sm-4 col-encabezado">
                 <p>
                     <h3>¿cómo funciona?</h3>
-                    <p>busca entre nuestro catálogo el vehículo que deseas alquilar e iniciá tu reserva</p>
+                    <p>busca entre nuestro catálogo el vehículo que deseas alquilar e iniciá tu reserva, si desea salir al exterior con nuestros vehículos le facilitamos el trámite!!!</p>
                 </p>
             </div>
             <div class="col-sm-4 col-encabezado">
@@ -76,8 +76,7 @@
                     <li class="card-text">dirección hidráulica</li>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/><ion-icon name="add-circle-sharp"></ion-icon> Reservar C4</button>
-                    <!--de momento coloco la alerta al hacer click en el botón-->
+                    <a href="/reserva.html" class="btn btn-primary btn-reserva" role="button"><ion-icon name="add-circle-sharp"></ion-icon>Reservar C4</a>
                 </div> 
             </div>
             <div class="card border-primary car-alq d-flex flex-column justify-content-between">
@@ -85,7 +84,7 @@
                     <h4 class="card-title"> Volkswagen</h4>
                     <h5 class="card-subtitle text-muted"> Gol</h5>
                     <img src="/imagenes/fotos autos/Volkswagen_Gol.jpg" class="card-img-top">
-                    <li class="card-text">Año 2022</li>
+                    <li class="card-text">Año 2019</li>
                     <li class="card-text">motor 1.6 diessel</li>
                     <li class="card-text">Aire acondicionado</li>
                     <li class="card-text">transmición manual</li> 
@@ -93,10 +92,14 @@
                     <li class="card-text">dirección hidráulica</li>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/><ion-icon name="add-circle-sharp"></ion-icon> Reservar Gol</button>
+                    <a href="/reserva.html" class="btn btn-primary btn-reserva" role="button"><ion-icon name="add-circle-sharp"></ion-icon>Reservar Gol</a>
+                    <!--ejemplo de botón usado antes <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/><ion-icon name="add-circle-sharp"></ion-icon> Reservar Gol</button>-->
                 </div> 
             </div>
             <div class="card border-primary car-alq d-flex flex-column justify-content-between">
+                <div class="card-head text-center">
+                    <h6>Alquila ahora!!! <span class="badge rounded-pill bg-danger">Nuevo Vehículo</span></h6>
+                </div>
                 <div class="card-body text-center">
                     <h4 class="card-title"> Renault</h4>
                     <h5 class="card-subtitle text-muted"> Kwid</h5>
@@ -109,7 +112,7 @@
                     <li class="card-text">dirección asistida</li>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/><ion-icon name="add-circle-sharp"></ion-icon> Reservar Kwid</button>
+                    <a href="/reserva.html" class="btn btn-primary btn-reserva" role="button"><ion-icon name="add-circle-sharp"></ion-icon>Reservar Kwid</a>
                 </div> 
             </div>
             <div class="card border-primary car-alq d-flex flex-column justify-content-between">
@@ -125,72 +128,7 @@
                     <li class="card-text">dirección hidráulica</li>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/><ion-icon name="add-circle-sharp"></ion-icon> Reservar creta</button>
-                </div> 
-            </div>
-            <div class="card border-primary car-alq d-flex flex-column justify-content-between">
-                <div class="card-body text-center">
-                    <h4 class="card-title"> Volkswagen</h4>
-                    <h5 class="card-subtitle text-muted"> Nivus tredline</h5>
-                    <img src="/imagenes/fotos autos/nivus.jpg" class="card-img-top">
-                    <li class="card-text">Año 2022</li>
-                    <li class="card-text">motor 1.0 gasolina</li>
-                    <li class="card-text">Aire acondicionado</li>
-                    <li class="card-text">transmición manual</li> 
-                    <li class="card-text">vidrios eléctricos</li>
-                    <li class="card-text">dirección hidráulica</li>
-                </div>
-                <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/><ion-icon name="add-circle-sharp"></ion-icon> Reservar Nivus</button>
-                </div> 
-            </div>
-            <div class="card border-primary car-alq d-flex flex-column justify-content-between">
-                <div class="card-body text-center">
-                    <h4 class="card-title"> BMW</h4>
-                    <h5 class="card-subtitle text-muted"> 118I </h5>
-                    <img src="/imagenes/fotos autos/2017-bmw-1-seriesjpg.jpg" class="card-img-top">
-                    <li class="card-text">Año 2022</p>
-                    <li class="card-text">motor 1.6 gasolina</li>
-                    <li class="card-text">Aire acondicionado</li>
-                    <li class="card-text">transmición manual</li> 
-                    <li class="card-text">vidrios eléctricos</li>
-                    <li class="card-text">dirección hidráulica</li>
-                </div>
-                <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/><ion-icon name="add-circle-sharp"></ion-icon> Reservar 118I</button>
-                </div> 
-            </div>
-            <div class="card border-primary car-alq d-flex flex-column justify-content-between">
-                <div class="card-body text-center">
-                    <h4 class="card-title"> Renault</h4>
-                    <h5 class="card-subtitle text-muted"> Oroch</h5>
-                    <img src="/imagenes/fotos autos/oroch.jpg" class="card-img-top">
-                    <li class="card-text">Año 2019</li>
-                    <li class="card-text">motor 1.6 gasolina</li>
-                    <li class="card-text">Aire acondicionado</li>
-                    <li class="card-text">transmición manual</li> 
-                    <li class="card-text">vidrios eléctricos</li>
-                    <li class="card-text">dirección hidráulica</li>
-                </div>
-                <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/><ion-icon name="add-circle-sharp"></ion-icon> Reservar Oroch</button>
-                </div> 
-            </div>
-            <div class="card border-primary car-alq d-flex flex-column justify-content-between">
-                <div class="card-body text-center">
-                    <h4 class="card-title"> Mercedes</h4>
-                    <h5 class="card-subtitle text-muted"> Benz SLK 350</h5>
-                    <img src="/imagenes/fotos autos/Mercedes-Benz-SLK.jpg" class="card-img-top">
-                    <li class="card-text">Año 2022</li>
-                    <li class="card-text">motor 3.0 gasolina</li>
-                    <li class="card-text">Aire acondicionado</li>
-                    <li class="card-text">transmición manual</li> 
-                    <li class="card-text">vidrios eléctricos delanteros</li>
-                    <li class="card-text">dirección hidráulica</li>
-                    <li class="card-text">Techo corredizo</li>
-                </div>
-                <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/><ion-icon name="add-circle-sharp"></ion-icon> Reservar SLK</button>
+                    <a href="/reserva.html" class="btn btn-primary btn-reserva" role="button"><ion-icon name="add-circle-sharp"></ion-icon>Reservar Creta</a>
                 </div> 
             </div>
             <div class="card border-primary car-alq d-flex flex-column justify-content-between">
@@ -206,10 +144,93 @@
                     <li class="card-text">dirección hidráulica</li>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva" onclick="alert('reserva realizada')"/><ion-icon name="add-circle-sharp"></ion-icon> Reservar H1</button>
+                    <a href="/reserva.html" class="btn btn-primary btn-reserva" role="button"><ion-icon name="add-circle-sharp"></ion-icon>Reservar H1</a>
                 </div> 
             </div>
-            
+            <div class="card border-primary car-alq d-flex flex-column justify-content-between">
+                <div class="card-body text-center">
+                    <h4 class="card-title"> Renault</h4>
+                    <h5 class="card-subtitle text-muted"> Oroch</h5>
+                    <img src="/imagenes/fotos autos/oroch.jpg" class="card-img-top">
+                    <li class="card-text">Año 2019</li>
+                    <li class="card-text">motor 1.6 gasolina</li>
+                    <li class="card-text">Aire acondicionado</li>
+                    <li class="card-text">transmición manual</li> 
+                    <li class="card-text">vidrios eléctricos</li>
+                    <li class="card-text">dirección hidráulica</li>
+                </div>
+                <div>
+                    <a href="/reserva.html" class="btn btn-primary btn-reserva" role="button"><ion-icon name="add-circle-sharp"></ion-icon>Reservar Oroch</a>
+                </div> 
+            </div>
+            <div class="card border-primary car-alq d-flex flex-column justify-content-between">
+                <div class="card-body text-center">
+                    <h4 class="card-title"> Volkswagen</h4>
+                    <h5 class="card-subtitle text-muted"> Nivus tredline</h5>
+                    <img src="/imagenes/fotos autos/nivus.jpg" class="card-img-top">
+                    <li class="card-text">Año 2022</li>
+                    <li class="card-text">motor 1.0 gasolina</li>
+                    <li class="card-text">Aire acondicionado</li>
+                    <li class="card-text">transmición manual</li> 
+                    <li class="card-text">vidrios eléctricos</li>
+                    <li class="card-text">dirección hidráulica</li>
+                </div>
+                <div>
+                    <a href="/reserva.html" class="btn btn-primary btn-reserva" role="button"><ion-icon name="add-circle-sharp"></ion-icon>Reservar Nivus</a>
+                </div> 
+            </div>
+            <div class="card border-primary car-alq d-flex flex-column justify-content-between">
+                <div class="card-body text-center">
+                    <h4 class="card-title"> Audi</h4>
+                    <h5 class="card-subtitle text-muted"> A8 </h5>
+                    <img src="/imagenes/fotos autos/Audi A8.jpg" class="card-img-top">
+                    <li class="card-text">Año 2022</p>
+                    <li class="card-text">motor hibrido, 3.0 gasolina + motor eléctrico</li>
+                    <li class="card-text">Aire acondicionado</li>
+                    <li class="card-text">transmición Automática</li> 
+                    <li class="card-text">vidrios eléctricos</li>
+                    <li class="card-text">dirección hidráulica</li>
+                </div>
+                <div>
+                    <a href="/reserva.html" class="btn btn-primary btn-reserva" role="button"><ion-icon name="add-circle-sharp"></ion-icon>Reservar A8</a>
+                </div> 
+            </div>
+            <div class="card border-primary car-alq d-flex flex-column justify-content-between">
+                <div class="card-body text-center">
+                    <h4 class="card-title"> BMW</h4>
+                    <h5 class="card-subtitle text-muted"> 118I </h5>
+                    <img src="/imagenes/fotos autos/2017-bmw-1-seriesjpg.jpg" class="card-img-top">
+                    <li class="card-text">Año 2022</p>
+                    <li class="card-text">motor 1.6 gasolina</li>
+                    <li class="card-text">Aire acondicionado</li>
+                    <li class="card-text">transmición manual</li> 
+                    <li class="card-text">vidrios eléctricos</li>
+                    <li class="card-text">dirección hidráulica</li>
+                </div>
+                <div>
+                    <a href="/reserva.html" class="btn btn-primary btn-reserva" role="button"><ion-icon name="add-circle-sharp"></ion-icon>Reservar 118I</a>
+                </div> 
+            </div>
+            <div class="card border-primary car-alq d-flex flex-column justify-content-between">
+                <div class="card-head text-center">
+                    <h6>Alquila ahora!!! <span class="badge rounded-pill bg-danger">Nuevo Vehículo</span></h6>
+                </div>
+                <div class="card-body text-center">
+                    <h4 class="card-title"> Mercedes</h4>
+                    <h5 class="card-subtitle text-muted"> Benz SLK 350</h5>
+                    <img src="/imagenes/fotos autos/Mercedes-Benz-SLK.jpg" class="card-img-top">
+                    <li class="card-text">Año 2022</li>
+                    <li class="card-text">motor 3.0 gasolina</li>
+                    <li class="card-text">Aire acondicionado</li>
+                    <li class="card-text">transmición manual</li> 
+                    <li class="card-text">vidrios eléctricos delanteros</li>
+                    <li class="card-text">dirección hidráulica</li>
+                    <li class="card-text">Techo corredizo</li>
+                </div>
+                <div>
+                    <a href="/reserva.html" class="btn btn-primary btn-reserva" role="button"><ion-icon name="add-circle-sharp"></ion-icon>Reservar SLK 350</a>
+                </div> 
+            </div>
         </div>
     </div>
 
