@@ -158,12 +158,41 @@
                     <div class="card-head text-center" style="background-color: rgb(75, 143, 221); color: white;">
                         <h3>Haceptamos las siguientes Garantías:</h3>
                     </div>
-                    <ul class="list-group list-group-flush text-center">
-                        <li class="list-group-item">sura</li>
-                        <li class="list-group-item">Porto seguros</li>
-                        <li class="list-group-item">Anda</li>
-                        <li class="list-group-item">Contaduría</li>
-                    </ul>
+
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="SuraHeading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acordeonSura" aria-expanded="false" aria-controls="acordeonSura">
+                              Sura
+                            </button>
+                          </h2>
+                          <div id="acordeonSura" class="accordion-collapse collapse" aria-labelledby="SuraHeading" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body"> con <strong>Sura</strong> podes alquilar un vehículo de valor U$S 80/día (precio base de 1 a 7 días)</div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="PortoHeading">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acordeonPorto" aria-expanded="false" aria-controls="acordeonPorto">
+                                Porto seguros
+                              </button>
+                            </h2>
+                            <div id="acordeonPorto" class="accordion-collapse collapse" aria-labelledby="PortoHeading" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">con <strong>Porto</strong> podes alquilar cualquiera de nuestros vehículos</div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="AndaHeading">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acordeonAnda" aria-expanded="false" aria-controls="acordeonAnda">
+                                Anda
+                              </button>
+                            </h2>
+                            <div id="acordeonAnda" class="accordion-collapse collapse" aria-labelledby="AndaHeading" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">con <strong>Anda</strong> podes alquilar un vehículo de valor U$S 200/día (precio base de 1 a 7 días).</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -215,108 +244,15 @@
 
 
 
-<!--<div class="card border-primary car-alq d-flex flex-column justify-content-between">
-                <div class="card-head text-center">
-                    <h6>Alquila ahora!!! <span class="badge rounded-pill bg-danger">Nuevo Vehículo</span></h6>
-                </div>
-                <div class="card-body text-center">
-                    <h4 class="card-title"> Mercedes</h4>
-                    <h5 class="card-subtitle text-muted"> Benz SLK 350</h5>
-                    <img src="/imagenes/fotos autos/Mercedes-Benz-SLK.jpg" class="card-img-top">
-                    <li class="card-text">Año 2022</li>
-                    <li class="card-text">motor 3.0 gasolina</li>
-                    <li class="card-text">Aire acondicionado</li>
-                    <li class="card-text">transmición manual</li> 
-                    <li class="card-text">vidrios eléctricos delanteros</li>
-                    <li class="card-text">dirección hidráulica</li>
-                    <li class="card-text">Techo corredizo</li>
-                </div>
-                <div>
-                    <a href="/reserva.html" class="btn btn-primary btn-reserva" role="button"><ion-icon name="add-circle-sharp"></ion-icon>Reservar SLK 350</a>
-                </div> 
-    </div>-->
-
-
-
-
-
-
-<!--<h1>Precios en U$S</h1>
-        <div class="table-responsive">
-            <table class="table">
-                <thead>
-                    <th>Tiempo de alquiler</th>
-                    <th><img src="/imagenes/logos/citroen logo.png" width="20" height="20"> C4</th>
-                    <th><img src="/imagenes/logos/Renault logo.png" width="20" height="20"> Kwid</th>
-                    <th><img src="/imagenes/logos/volkswagen logo.png" width="20" height="20"> Gol</th>
-                    <th><img src="/imagenes/logos/Hyundai logo.png" width="30" height="20"> Creta</th> 
-                    <th><img src="/imagenes/logos/Renault logo.png" width="20" height="20"> Oroch</th> 
-                    <th><img src="/imagenes/logos/Hyundai logo.png" width="30" height="20"> H1</th>
-                    <th><img src="/imagenes/logos/volkswagen logo.png" width="20" height="20"> Nivus</th> 
-                    <th><img src="/imagenes/logos/BMW-logo.png" width="40" height="30">118 I</th> 
-                    <th><img src="/imagenes/logos/mercedes logo.png" width="22" height="20"> SLK 350</th>
-                    <th><img src="/imagenes/logos/logo audi.png" width="40" height="30"> A8</th>
-                    
-    
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1 a 7 días</td>
-                        <td>75/día</td>
-                        <td>75/día</td>
-                        <td>80/día</td>
-                        <td>80/día</td>
-                        <td>U$ 80/día</td>
-                        <td>100/día</td>
-                        <td>200/día</td>
-                        <td>250/día</td>
-                        <td>300/día</td>
-                        <td>300/día</td>
-    
-                        
-                    </tr>        
-                    <tr>
-                        <td>7 a 14 días</td>
-                        <td>55/día</td>
-                        <td>55/día</td>
-                        <td>60/día</td>
-                        <td>60/día</td>
-                        <td>60/día</td>
-                        <td>80/día</td>
-                        <td>180/día</td>
-                        <td>230/día</td>
-                        <td>280/día</td>
-                        <td>280/día</td>
-                        
-                    </tr>
-                    <tr>
-                        <td>14 a 21 días</td>
-                        <td>45/día</td>
-                        <td>45/día</td>
-                        <td>50/día</td>
-                        <td>50/día</td>
-                        <td>50/día</td>
-                        <td>70/día</td>
-                        <td>170/día</td>
-                        <td>220/día</td>
-                        <td>270/día</td>
-                        <td>270/día</td>
-                        
-                    </tr>
-                    <tr>
-                        <td>1 mes</td>
-                        <td>25/día</td>
-                        <td>25/día</td>
-                        <td>30/día</td>
-                        <td>30/día</td>
-                        <td>30/día</td>
-                        <td>50/día</td>
-                        <td>150/día</td>
-                        <td>200/día</td>
-                        <td>250/día</td>
-                        <td>250/día</td>
-                        
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+<!-- <div class="accordion-item text-center">
+                            <h5 class="accordion-header" id="garsura">
+                              <button class="accordion-button " type="button btn" data-bs-toggle="collapse" data-bs-target="#collapseSura" aria-expanded="false" aria-controls="collapseSura">
+                                Sura
+                              </button>
+                            </h5>
+                            <div id="collapseSura" class="accordion-collapse collapse" aria-labelledby="garsura" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <strong>Seguros Sura.</strong> ofrece como garantía para vehículos de máximo U$S 80/día (precio base de 1 a 7 días) 
+                              </div>
+                            </div>
+                          </div>-->
