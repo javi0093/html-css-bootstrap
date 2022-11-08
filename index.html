@@ -83,7 +83,7 @@
             <div class="col-sm-4" >
                 <div class="collapse multicollapse" id="comopago">
                     <div class="card card-body d-flex flex-wrap">
-                        <p>Utilizá tu targeta preferida</p>
+                        <p>Utilizá tu targeta preferida o realizá tu reserva en nuestros locales con pago en efectivo</p>
                     </div>
                 </div>
 
@@ -136,7 +136,7 @@
                     <h6>Alquila ahora!!! <span class="badge rounded-pill bg-danger">Nuevo Vehículo</span></h6>
                 </div>
                 <div class="card-body text-center">
-                    <h4 class="card-title"> Renault</h4>
+                    <h4 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Promoción por nuevo vehículo!!!"> Renault</h4>
                     <h5 class="card-subtitle text-muted"> Kwid</h5>
                     <img src="/imagenes/fotos autos/Renault_Kwid.jpg" class="card-img-top">
                     <li class="card-text">Año 2022</li>
@@ -146,8 +146,8 @@
                     <li class="card-text">vidrios eléctricos</li>
                     <li class="card-text">dirección asistida</li>
                 </div>
-                <div>
-                    <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#modalreservar">
+                <div data-bs-toggle="popover" data-bs-placement="top" data-bs-class="custom-popover" data-bs-title="Disponibilidad" data-bs-content="Disponible solo en nuestra casa central" data-bs-trigger="hover focus" >
+                    <button type="button" class="btn btn-primary btn-reserva"  data-bs-toggle="modal" data-bs-target="#modalreservar">
                         <ion-icon name="arrow-forward-circle"></ion-icon> Reservar Kwid
                     </button>
                 </div> 
@@ -265,7 +265,7 @@
                     <h6>Alquila ahora!!! <span class="badge rounded-pill bg-danger">Nuevo Vehículo</span></h6>
                 </div>
                 <div class="card-body text-center">
-                    <h4 class="card-title"> Mercedes</h4>
+                    <h4 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Promoción por nuevo vehículo!!!" > Mercedes</h4>
                     <h5 class="card-subtitle text-muted"> Benz SLK 350</h5>
                     <img src="/imagenes/fotos autos/Mercedes-Benz-SLK.jpg" class="card-img-top">
                     <li class="card-text">Año 2022</li>
@@ -276,15 +276,13 @@
                     <li class="card-text">dirección hidráulica</li>
                     <li class="card-text">Techo corredizo</li>
                 </div>
-                <div>
-                    <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#modalreservar">
+                <div data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Disponibilidad" data-bs-content="Disponible solo en nuestra casa central" data-bs-trigger="hover focus" >
+                    <button type="button" class="btn btn-primary btn-reserva"  data-bs-toggle="modal" data-bs-target="#modalreservar">
                         <ion-icon name="arrow-forward-circle"></ion-icon> Reserva SLK 350
                     </button>
-            </div>
+                </div>
         </div>
     </div>
-
-
             <!-- Modal -->
             <div class="modal fade" id="modalreservar" tabindex="-1" aria-labelledby="modalreservarLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
@@ -384,7 +382,7 @@
                     </div>
                 </div>
             </div>
-
+            
 
     <footer>
         <div class="row">
@@ -396,7 +394,7 @@
             <div class="col-sm-4">
                 <address>
                         <h5>Contacto</h5>
-                        <p><ion-icon name="location-sharp"></ion-icon> Bv artigas 11600 (Montevideo,Uruguay)</p>
+                        <p><ion-icon name="location-sharp"></ion-icon>Casa central: Bv artigas 11600 (Montevideo,Uruguay)</p>
                         <p><ion-icon name="logo-whatsapp"></ion-icon> Whatsapp: +598 29876543</p>
                         <p><ion-icon name="call-sharp"></ion-icon> tel: +598 98765432</p>
                         <p><ion-icon name="mail-open-sharp"></ion-icon> Mail: alquicar@alquilerautos.com</p>
@@ -406,7 +404,7 @@
             <div class="col-sm-4 d-flex flex-column align-items-end">
                 <a href="/about.html">Nosotros</a>
                 <a href="/term y cond.html">Términos y condiciones</a>
-                <a href="/contacto.html">Contacto</a>
+                <a href="/Locales.html">Locales</a>
             </div>
         </div>
        
@@ -416,6 +414,15 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script> <!-- es el script para poder usar íconos-->
+    <script>    
+        $(function () {
+         $("[data-bs-toggle='tooltip']").tooltip();
+         $("[data-bs-toggle='popover']").popover();
+         $('.carousel').carousel({interval: 2000});
+    });
+    </script>
+    
   </body>
 </html>

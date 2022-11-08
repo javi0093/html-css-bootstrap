@@ -55,3 +55,14 @@ footer{
     padding: 1px 10px 1px 10px; 
     margin-right: 20px;
 }
+.mapas{
+    margin-bottom: 10px;
+}
+.popover {
+    background-color: whitesmoke;
+    border-color: rgb(2, 148, 148);
+  }
+  .popover-header{
+    background-color: orange;
+  }
+ 

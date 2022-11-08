@@ -26,9 +26,9 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="/index.html"><ion-icon name="home"></ion-icon>Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="/about.html">Nosotros</a></li>
-                <li class="nav-item"><a class="nav-link" href="/precios.html">Precios</a></li>
+                <li class="nav-item active" aria-current="page"><a class="nav-link" href="/precios.html">Precios</a></li>
                 <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto</a></li>
-                <li class="nav-item active" aria-current="page"><a class="nav-link" href="/term y cond.html">Términos y condiciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="/term y cond.html">Términos y condiciones</a></li>
 
             </ul>
         </div>
@@ -40,21 +40,46 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Términos y condiciones</li>
+                <li class="breadcrumb-item active" aria-current="page">Precios</li>
             </ol>
         </nav>
-        <span>
-            <h1> Términos y condiciones</h1>
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                <li>Integer et justo sit amet erat consequat suscipit quis a ipsum.</li>
-                <li>Donec a orci viverra, tristique ipsum quis, faucibus enim.</li>
-                <li>Mauris ac risus non enim lobortis fermentum eu sit amet magna.</li>
-                <li>Ut tristique libero ac ipsum lacinia consequat.</li>
-                <li>Aenean cursus augue ac velit vestibulum, sed porta enim semper.</li>
-                <li>Quisque blandit erat et tincidunt tincidunt.</li>
-            </ul>
-        </span>
+        
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="ccentral-tab" data-bs-toggle="tab" aria-selected="true" aria-controls="ccentral" role="tab" href="#ccentral"><h4>Casa central</h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="carrasco-tab" data-bs-toggle="tab" aria-selected="true" aria-controls="carrasco" role="tab" href="#carrasco"><h4>Carrasco</h4></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="colonia-tab" data-bs-toggle="tab" aria-selected="true" aria-controls="colonia" role="tab" href="#colonia"><h4>Colonia</h4></a>
+              
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="ccentral" role="tabpanel" aria-labelledby="ccentral-tab">
+                <p>
+                    <a style="text-decoration: none" href="https://www.google.com/maps/place/Bv.+Gral.+Artigas,+11600+Montevideo,+Departamento+de+Montevideo/@-34.8864763,-56.1681451,17z/data=!3m1!4b1!4m5!3m4!1s0x959f800ec083c7bf:0xde0fc6f28df9c49e!8m2!3d-34.8864807!4d-56.1659564">
+                        Bv artigas 11600 (Montevideo, Uruguay)</a>
+                </p>
+                <img src="/imagenes/Mapas/Casa central.jpg">
+            </div>
+            <div class="tab-pane fade show" id="carrasco" role="tabpanel" aria-labelledby="carrasco-tab">
+                <p>
+                    <a style="text-decoration: none" href="https://www.google.com/maps/place/Av.+Gral.+Rivera+6803,+11500+Montevideo,+Departamento+de+Montevideo/@-34.8847101,-56.0563999,17z/data=!3m1!4b1!4m5!3m4!1s0x959f86690ba9611f:0x6341090ee6c9f4fe!8m2!3d-34.8847145!4d-56.0542112">
+                        Av. Gral. Rivera 6803, esquina Dr. Eduardo Blanco Acevedo (Montevideo, Uruguay)</a>
+                </p>
+                <img src="/imagenes/Mapas/Carrasco.jpg">
+            </div>
+            <div class="tab-pane fade show" id="colonia" role="tabpanel" aria-labelledby="colonia-tab">
+                <p>
+                    <a style="text-decoration:none" href="https://www.google.com/maps/place/Tacuaremb%C3%B3+609,+70000+Col+Del+Sacramento,+Departamento+de+Colonia/@-34.463014,-57.838636,16.5z/data=!4m5!3m4!1s0x95a312634f4ea0cd:0xdcdf87ecd4220619!8m2!3d-34.4628759!4d-57.8374025">
+                        Tacuarembó 609, esquina avenida Baltasar Brum (Colonia del sacramento, Colonia, Uruguay)</a>
+                </p>
+                <img src="/imagenes/Mapas/Colonia.jpg">
+            </div>
+        </div>
+
     </div>
 
 
