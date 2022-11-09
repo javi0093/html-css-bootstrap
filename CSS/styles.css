@@ -1,0 +1,68 @@
+@charset "UTF-8";
+.jumbotron {
+  background-color: #4b8fdd;
+  color: #ffffff; }
+
+.imagenlogo {
+  width: 80px;
+  height: 30px; }
+
+/*si quiero cambiarle manualmente el color a los botones
+.btn{
+    color: white;
+    background-color: brown;
+
+    si al lado de class btn pongo btn-primary se cambia a fondo azul y letras blancas por ser algo de
+    Bootstrap
+    otras opciones de Bootstrap son btn-warning (amarillo negro), btn-success(verde blanco) 
+    si quiero más hay en https://getbootstrap.com/docs/4.0/components/buttons/
+}*/
+footer {
+  padding: 10px 10px 0 10px;
+  background-color: #73b9ca;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.car-alq {
+  flex: 1 200px;
+  /*el 1 hace referencia a la propiedad de flex wrap (cuanto queremos que crezca el elemento, si le pongo 2 el elemento puede ocupar el
+    doble de ancho, el 150 es la propiedad flex basics pages que indica cual es el ancho definido)*/
+  padding: 2px 0px 0px 0px;
+  /*padding da en orden: padding arriba, derecha abajo izquierda*/
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 2px;
+  margin-right: 2px; }
+
+.espacioregistro {
+  margin-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.btn-reserva {
+  width: 100%; }
+
+.col-encabezado {
+  padding: 2px 10px 2px 10px; }
+
+.navbar-brand {
+  padding: 1px 10px 1px 10px;
+  margin-left: 15px; }
+
+.navbar-toggler {
+  padding: 1px 10px 1px 10px;
+  margin-right: 20px; }
+
+.mapas {
+  margin-bottom: 10px; }
+
+.popover {
+  background-color: #f5f5f5;
+  border-color: #029494; }
+
+.popover-header {
+  background-color: #ffa500; }
