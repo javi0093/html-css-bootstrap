@@ -1,25 +1,21 @@
-@charset "UTF-8";
+@celeste: #4b8fdd;
+@celesteclaro: #73b9ca;
+@whitesmoke: #f5f5f5;
+@bordepopover: #029494;
+@orange: #ffa500;
+@white: #ffffff;
+
 .jumbotron {
-  background-color: #4b8fdd;
-  color: #ffffff; }
+  background-color: @celeste;
+  color: @white; }
 
 .imagenlogo {
   width: 80px;
   height: 30px; }
 
-/*si quiero cambiarle manualmente el color a los botones
-.btn{
-    color: white;
-    background-color: brown;
-
-    si al lado de class btn pongo btn-primary se cambia a fondo azul y letras blancas por ser algo de
-    Bootstrap
-    otras opciones de Bootstrap son btn-warning (amarillo negro), btn-success(verde blanco) 
-    si quiero más hay en https://getbootstrap.com/docs/4.0/components/buttons/
-}*/
 footer {
   padding: 10px 10px 0 10px;
-  background-color: #73b9ca;
+  background-color: @celesteclaro;
   margin-top: 10px;
   margin-bottom: 0px;
   margin-left: 0px;
@@ -58,14 +54,11 @@ footer {
   margin-right: 20px; }
 
 .mapas {
-  margin-top: 0px;
-  margin-bottom: 10px;
-  margin-left: 0px;
-  margin-right: 0px; }
+  margin-bottom: 10px; }
 
 .popover {
-  background-color: #f5f5f5;
-  border-color: #029494; }
+  background-color: @whitesmoke;
+  border-color: @bordepopover; }
 
 .popover-header {
-  background-color: #ffa500; }
+  background-color: @orange; }
