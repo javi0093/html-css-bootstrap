@@ -127,6 +127,15 @@
         </div>
         
         <hr>
+        <div class="row">
+
+            <div class="col-sm-4 align-items-center">
+                <button type="button" id="btnreservamodal2" class="btn btn-outline-success btn-reserva"  data-bs-toggle="modal" data-bs-target="#modalreservar2">
+                    <ion-icon name="people"></ion-icon> registrarse
+                </button>
+            </div>
+        </div>
+        <hr>
 
         <div class="d-flex flex-wrap "> <!--el flex-row-reverse rellena de derecha a izquierda-->
             <div class="card border-primary car-alq d-flex flex-column justify-content-between">
@@ -313,17 +322,20 @@
                     <li class="card-text">vidrios eléctricos delanteros</li>
                     <li class="card-text">dirección hidráulica</li>
                     <li class="card-text">Techo corredizo</li>
+                    
                 </div>
                 <div data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Disponibilidad" data-bs-content="Disponible solo en nuestra casa central" data-bs-trigger="hover focus" >
-                    <button type="button" class="btn btn-primary btn-reserva"  data-bs-toggle="modal" data-bs-target="#modalreservar">
+                    <button type="button" id="btnreservamodal" class="btn btn-primary btn-reserva"  data-bs-toggle="modal" data-bs-target="#modalreservar">
                         <ion-icon name="arrow-forward-circle"></ion-icon> Reserva SLK 350
                     </button>
                 </div>
+                
         </div>
+        
     </div>
             <!-- Modal -->
             <div class="modal fade" id="modalreservar" tabindex="-1" aria-labelledby="modalreservarLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
+                <div class="modal-dialog modal-lg" id="botonreservamodal">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h2 class="modal-title fs-5" id="modalreservarLabel" style="color: rgb(100, 11, 41) ;">Reserva ahora</h2>
@@ -421,7 +433,58 @@
                 </div>
             </div>
             
+            <!-- Modal para el botón que cambia de color -->
+            <div class="modal fade" id="modalreservar2" tabindex="-1" aria-labelledby="modalreservarLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-lg" id="botonreservamodal2">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title fs-5" id="modalreservarLabel2" style="color: rgb(100, 11, 41) ;">Registrarse</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group row espacioregistro">
+                                    <div class="form-group col-sm-6">
+                                        <label for="nombre">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" placeholder="ingrese su nombre"> 
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                            <label for="apellido">Apellido</label>
+                                            <input type="text" class="form-control" id="apellido" placeholder="ingrese su Apellido"> 
+                                    </div>
+                                    <div class="form-group espacioregistro">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="ingrese su Email"> 
+                                    </div>
+                                    <div class="form-group espacioregistro">
+                                        <label for="password">contraseña</label>
+                                        <input type="password" class="form-control" id="password" placeholder="ingrese su contraseña"> 
+                                    </div>
+                                    <div class="form-group espacioregistro">
+                                        <label for="confpassword">contraseña</label>
+                                        <input type="password" class="form-control" id="confpassword" placeholder="repita su contraseña"> 
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group espacioregistro">
+                                    <div class="form-check ">
+                                        <input type="checkbox" class="form-check-input" id="TermYCond">
+                                        <label class="form-check-label" for="TermYCond">Estoy de acuerdo con los términos y condiciones</label>
+                                    </div>
 
+                                </div>
+    
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" onclick="alert('reserva realizada')">registrarse</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
     <footer>
         <div class="row">
             <div class="col-sm-4 d-flex flex-column">
@@ -450,7 +513,7 @@
     <!--optional JavaScript-->
     <!--JQuery fisrst, then popper, then Bootstrap-->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script> <!-- es el script para poder usar íconos-->
@@ -459,7 +522,34 @@
          $("[data-bs-toggle='tooltip']").tooltip();
          $("[data-bs-toggle='popover']").popover();
          $('.carousel').carousel({interval: 2000});
-    });
+        });
+
+
+        /* así se hace según los docs de bootstrap 5.2:
+        const myModalEl = document.getElementById('modalreservar')
+             myModalEl.addEventListener('show.bs.modal', event => {
+         console.log('el modal se está mostrando');
+        })*/
+        $('#modalreservar2').on('show.bs.modal', function (e){
+            console.log('el modal se está mostrando');
+
+            $('#btnreservamodal2').removeClass('btn-outline-success');
+            $('#btnreservamodal2').addClass('btn-primary');
+            $('#btnreservamodal2').prop('disabled',true);
+
+        })
+        $('#modalreservar').on('shown.bs.modal', function (e){
+            console.log('el modal se mostró');
+        })
+        $('#modalreservar').on('hide.bs.modal', function (e){
+            console.log('el modal se está ocultando');
+        })
+        $('#modalreservar2').on('hidden.bs.modal', function (e){
+            console.log('el modal se ocultó');
+            $('#btnreservamodal2').removeClass('btn-primary');
+            $('#btnreservamodal2').addClass('btn-outline-success');
+            $('#btnreservamodal2').prop('disabled',false);
+        })
     </script>
     
   </body>
