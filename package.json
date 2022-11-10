@@ -5,8 +5,13 @@
   "main": "index.html",
   "scripts": {
     "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -o css/ css/"
+    "start": "concurrently \"npm run watch:scss\"  \"npm run dev\"",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin images/* --out-dir=dist/images",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html && usemin locales.html -d dist --htmlmin -o dist/locales.html && usemin precios.html -d dist --htmlmin -o dist/precios.html && usemin termycond.html -d dist --htmlmin -o dist/termycond.html",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -19,13 +24,25 @@
   },
   "homepage": "https://bitbucket.org/marcoperez99/guia-hoteles#readme",
   "devDependencies": {
+    "bootstrap": "^5.2.2",
+    "copyfiles": "^2.4.1",
+    "cssmin": "^0.4.3",
+    "htmlmin": "^0.0.7",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.0",
     "lite-server": "^2.6.1",
-    "node-sass": "^8.0.0"
+    "node-sass": "^8.0.0",
+    "onchange": "^7.1.0",
+    "rimraf": "^3.0.2",
+    "uglify-js": "^3.17.4",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
-    "bootstrap": "^5.2.2",
+    "concurrently": "^7.5.0",
     "jquery": "^3.6.1",
     "open-iconic": "^1.1.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "uuid": "^9.0.0"
   }
 }

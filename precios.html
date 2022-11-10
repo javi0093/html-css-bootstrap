@@ -6,9 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
 
-    <!--Bootstrap Css-->
+    <!-- build:css dist/precios.css -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="CSS/main.css" rel="stylesheet" />
+    <link href="CSS/styles.css" rel="stylesheet" />
+    <!-- endbuild -->
     <title>Alquicar</title>
 </head>
 
@@ -16,7 +17,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <!--fixed-top es para que el navbar quede aunque baje en la página-->
         <!--el navbar-expand hace que se expanda la navbar y si achico se pasa a menú desplegable, el md es el tamaño, puede ser lg(large) o sm(small)-->
-        <a class="navbar-brand" href="#">Automóviles</a>
+        <a class="navbar-brand" href="/index.html"><img src="/images/Banner2.jpg" class="imagenlogo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,7 +29,7 @@
                 <li class="nav-item"><a class="nav-link" href="/about.html">Nosotros</a></li>
                 <li class="nav-item active" aria-current="page"><a class="nav-link" href="/precios.html">Precios</a></li>
                 <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto</a></li>
-                <li class="nav-item"><a class="nav-link" href="/term y cond.html">Términos y condiciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="/termycond.html">Términos y condiciones</a></li>
 
             </ul>
         </div>
@@ -63,16 +64,16 @@
                     <table class="table">
                         <thead>
                             <th>Tiempo de alquiler</th>
-                            <th><img src="/imagenes/logos/citroen logo.png" width="20" height="20"> C4</th>
-                            <th><img src="/imagenes/logos/Renault logo.png" width="20" height="20"> Kwid</th>
-                            <th><img src="/imagenes/logos/volkswagen logo.png" width="20" height="20"> Gol</th>
-                            <th><img src="/imagenes/logos/Hyundai logo.png" width="30" height="20"> Creta</th> 
-                            <th><img src="/imagenes/logos/Renault logo.png" width="20" height="20"> Oroch</th> 
-                            <th><img src="/imagenes/logos/Hyundai logo.png" width="30" height="20"> H1</th>
-                            <th><img src="/imagenes/logos/volkswagen logo.png" width="20" height="20"> Nivus</th> 
-                            <th><img src="/imagenes/logos/BMW-logo.png" width="40" height="30">118 I</th> 
-                            <th><img src="/imagenes/logos/mercedes logo.png" width="22" height="20"> SLK 350</th>
-                            <th><img src="/imagenes/logos/logo audi.png" width="40" height="30"> A8</th>
+                            <th><img src="/images/citroen logo.png" width="20" height="20"> C4</th>
+                            <th><img src="/images/Renault logo.png" width="20" height="20"> Kwid</th>
+                            <th><img src="/images/volkswagen logo.png" width="20" height="20"> Gol</th>
+                            <th><img src="/images/Hyundai logo.png" width="30" height="20"> Creta</th> 
+                            <th><img src="/images/Renault logo.png" width="20" height="20"> Oroch</th> 
+                            <th><img src="/images/Hyundai logo.png" width="30" height="20"> H1</th>
+                            <th><img src="/images/volkswagen logo.png" width="20" height="20"> Nivus</th> 
+                            <th><img src="/images/BMW-logo.png" width="40" height="30">118 I</th> 
+                            <th><img src="/images/mercedes logo.png" width="22" height="20"> SLK 350</th>
+                            <th><img src="/images/logo audi.png" width="40" height="30"> A8</th>
                             
             
                         </thead>
@@ -219,7 +220,7 @@
             </div>
             <div class="col-sm-4 d-flex flex-column align-items-end">
                 <a href="/about.html">Nosotros</a>
-                <a href="/term y cond.html">Términos y condiciones</a>
+                <a href="/termycond.html">Términos y condiciones</a>
                 <a href="/Locales.html">Locales</a>
             </div>
         </div>
@@ -227,32 +228,11 @@
     </footer>
     <!--optional JavaScript-->
     <!--JQuery fisrst, then popper, then Bootstrap-->
+    <!-- build:js dist/precios.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.css"></script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <!-- endbuild -->
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="accordion-item text-center">
-                            <h5 class="accordion-header" id="garsura">
-                              <button class="accordion-button " type="button btn" data-bs-toggle="collapse" data-bs-target="#collapseSura" aria-expanded="false" aria-controls="collapseSura">
-                                Sura
-                              </button>
-                            </h5>
-                            <div id="collapseSura" class="accordion-collapse collapse" aria-labelledby="garsura" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <strong>Seguros Sura.</strong> ofrece como garantía para vehículos de máximo U$S 80/día (precio base de 1 a 7 días) 
-                              </div>
-                            </div>
-                          </div>-->

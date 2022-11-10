@@ -17,6 +17,13 @@ $white: #ffffff;
     margin-right: $right;
 }
 
+@mixin padding($top: 0px, $bottom: 0px, $left: 0px, $right: 0px) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+    padding-left: $left;
+    padding-right: $right;
+}
+
 
 .jumbotron{
     background-color: $celeste;
@@ -39,7 +46,7 @@ $white: #ffffff;
 }*/
 
 footer{
-    padding: 10px 10px 0 10px;
+    @include padding(10px, 10px,0px ,10px)
     background-color: $celesteclaro;
     @include margenes(10px);
 }

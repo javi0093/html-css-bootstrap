@@ -18,7 +18,10 @@
     si quiero más hay en https://getbootstrap.com/docs/4.0/components/buttons/
 }*/
 footer {
-  padding: 10px 10px 0 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 10px;
   background-color: #73b9ca;
   margin-top: 10px;
   margin-bottom: 0px;
