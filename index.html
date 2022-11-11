@@ -513,40 +513,14 @@
     </footer>
     <!--optional JavaScript-->
     <!--JQuery fisrst, then popper, then Bootstrap-->
-    <!-- build:js dist/index.js -->
+
+    <!-- build:js dist/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.jss"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.css"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.css"></script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script> <!-- es el script para poder usar íconos-->
-    <script>    
-        $(function () {
-         $("[data-bs-toggle='tooltip']").tooltip();
-         $("[data-bs-toggle='popover']").popover();
-         $('.carousel').carousel({interval: 2000});
-        });
-
-        $('#modalreservar2').on('show.bs.modal', function (e){
-            console.log('el modal se está mostrando');
-
-            $('#btnreservamodal2').removeClass('btn-outline-success');
-            $('#btnreservamodal2').addClass('btn-primary');
-            $('#btnreservamodal2').prop('disabled',true);
-
-        })
-        $('#modalreservar').on('shown.bs.modal', function (e){
-            console.log('el modal se mostró');
-        })
-        $('#modalreservar').on('hide.bs.modal', function (e){
-            console.log('el modal se está ocultando');
-        })
-        $('#modalreservar2').on('hidden.bs.modal', function (e){
-            console.log('el modal se ocultó');
-            $('#btnreservamodal2').removeClass('btn-primary');
-            $('#btnreservamodal2').addClass('btn-outline-success');
-            $('#btnreservamodal2').prop('disabled',false);
-        })
-    </script>
-    <!--enbuild-->
+    <script src="/js/index.js"></script>
+    <!-- enbuild -->
   </body>
 </html>

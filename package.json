@@ -1,48 +1,22 @@
 {
   "name": "guia-hoteles",
   "version": "1.0.0",
-  "description": "nuestro primer proyecto nodejs",
-  "main": "index.html",
+  "private": true,
   "scripts": {
-    "dev": "lite-server",
-    "start": "concurrently \"npm run watch:scss\"  \"npm run dev\"",
-    "scss": "node-sass -o css/ css/",
-    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-    "clean": "rimraf dist",
-    "imagemin": "imagemin images/* --out-dir=dist/images",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html && usemin locales.html -d dist --htmlmin -o dist/locales.html && usemin precios.html -d dist --htmlmin -o dist/precios.html && usemin termycond.html -d dist --htmlmin -o dist/termycond.html",
-    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
+    "server": "gulp server",
+    "build": "gulp build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://marcoperez99@bitbucket.org/marcoperez99/guia-hoteles.git"
-  },
-  "author": "Javier Gorgoroso",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://bitbucket.org/marcoperez99/guia-hoteles/issues"
-  },
-  "homepage": "https://bitbucket.org/marcoperez99/guia-hoteles#readme",
   "devDependencies": {
-    "bootstrap": "^5.2.2",
-    "copyfiles": "^2.4.1",
-    "cssmin": "^0.4.3",
-    "htmlmin": "^0.0.7",
-    "imagemin": "^8.0.1",
-    "imagemin-cli": "^7.0.0",
-    "lite-server": "^2.6.1",
-    "node-sass": "^8.0.0",
-    "onchange": "^7.1.0",
-    "rimraf": "^3.0.2",
-    "uglify-js": "^3.17.4",
-    "uglifyjs": "^2.4.11",
-    "usemin-cli": "^0.6.0"
-  },
-  "dependencies": {
-    "concurrently": "^7.5.0",
-    "jquery": "^3.6.1",
-    "open-iconic": "^1.1.1",
-    "popper.js": "^1.16.1",
-    "uuid": "^9.0.0"
+    "del": "^7.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-usemin": "^0.3.30",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2"
   }
 }

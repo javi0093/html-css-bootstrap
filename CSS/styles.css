@@ -1,11 +1,13 @@
 @charset "UTF-8";
 .jumbotron {
   background-color: #4b8fdd;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 .imagenlogo {
   width: 80px;
-  height: 30px; }
+  height: 30px;
+}
 
 /*si quiero cambiarle manualmente el color a los botones
 .btn{
@@ -26,49 +28,57 @@ footer {
   margin-top: 10px;
   margin-bottom: 0px;
   margin-left: 0px;
-  margin-right: 0px; }
+  margin-right: 0px;
+}
 
 .car-alq {
-  flex: 1 200px;
-  /*el 1 hace referencia a la propiedad de flex wrap (cuanto queremos que crezca el elemento, si le pongo 2 el elemento puede ocupar el
-    doble de ancho, el 150 es la propiedad flex basics pages que indica cual es el ancho definido)*/
-  padding: 2px 0px 0px 0px;
-  /*padding da en orden: padding arriba, derecha abajo izquierda*/
+  flex: 1 200px; /*el 1 hace referencia a la propiedad de flex wrap (cuanto queremos que crezca el elemento, si le pongo 2 el elemento puede ocupar el
+doble de ancho, el 150 es la propiedad flex basics pages que indica cual es el ancho definido)*/
+  padding: 2px 0px 0px 0px; /*padding da en orden: padding arriba, derecha abajo izquierda*/
   margin-top: 10px;
   margin-bottom: 0px;
   margin-left: 2px;
-  margin-right: 2px; }
+  margin-right: 2px;
+}
 
 .espacioregistro {
   margin-top: 20px;
   margin-top: 20px;
   margin-bottom: 0px;
   margin-left: 0px;
-  margin-right: 0px; }
+  margin-right: 0px;
+}
 
 .btn-reserva {
-  width: 100%; }
+  width: 100%;
+}
 
 .col-encabezado {
-  padding: 2px 10px 2px 10px; }
+  padding: 2px 10px 2px 10px;
+}
 
 .navbar-brand {
   padding: 1px 10px 1px 10px;
-  margin-left: 15px; }
+  margin-left: 15px;
+}
 
 .navbar-toggler {
   padding: 1px 10px 1px 10px;
-  margin-right: 20px; }
+  margin-right: 20px;
+}
 
 .mapas {
   margin-top: 0px;
   margin-bottom: 10px;
   margin-left: 0px;
-  margin-right: 0px; }
+  margin-right: 0px;
+}
 
 .popover {
   background-color: #f5f5f5;
-  border-color: #029494; }
+  border-color: #029494;
+}
 
 .popover-header {
-  background-color: #ffa500; }
+  background-color: #ffa500;
+}

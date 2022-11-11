@@ -46,7 +46,7 @@ $white: #ffffff;
 }*/
 
 footer{
-    @include padding(10px, 10px,0px ,10px)
+    @include padding(10px, 10px,0px ,10px);
     background-color: $celesteclaro;
     @include margenes(10px);
 }
